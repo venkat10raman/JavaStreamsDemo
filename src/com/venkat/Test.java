@@ -4,12 +4,13 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		callSM();
+		callEM();
 	}
 	
 	public static void callEM() {
 		EmployeeManagement em = new EmployeeManagement();
 		em.mostExperiencedEmployee();
+		em.totalMaleFemale();
 	}
 	
 	public static void callPM() {
