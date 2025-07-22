@@ -75,6 +75,11 @@ public class EmployeeManagement {
 		System.out.println(employee.getName());
 		System.out.println(employee.getDepartment());
 		System.out.println(employee.getGender());
+		
+		employeeList.stream()
+			.filter(e -> e.getAge() > 30)
+			.sorted(Comparator.comparing(Employee::getName))
+			.forEach(System.out::println);
 	}
 	
 	public void totalMaleFemale() {

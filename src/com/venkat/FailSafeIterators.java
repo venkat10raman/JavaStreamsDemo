@@ -36,7 +36,9 @@ public class FailSafeIterators {
 			// This will reflect in iterator.
 			// Hence, it has not created separate copy
 			map.put("SEVEN", 7);
+			map.remove("ONE");
 		}
+		System.out.println(map);
 
 	}
 
@@ -53,6 +55,7 @@ public class FailSafeIterators {
 				// This will not print,
 				// hence it has created separate copy
 				list.add(14);
+				list.remove(0);
 			}
 		}
 
